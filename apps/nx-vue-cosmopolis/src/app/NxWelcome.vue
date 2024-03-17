@@ -9,8 +9,8 @@ defineProps<{
     <div class="container">
       <div id="welcome">
         <h1>
-          <span> Hello there, </span>
-          Welcome {{ title }} 👋
+          <span> Hello fellows there, </span>
+          Welcome nx-vue-cosmopolis 👋
         </h1>
       </div>
 
@@ -32,7 +32,7 @@ defineProps<{
             </svg>
             <span>You&apos;re up and running</span>
           </h2>
-          <a href="#commands"> What&apos;s next? </a>
+          <a href="#commands"> Super cool vue3 monorepo </a>
         </div>
         <div class="logo-container">
           <svg
