@@ -42,6 +42,7 @@ Now Let's use it.
 ```bash
 #1. create a lib named products
 nx g @nx/vue:library products --directory=modules/products --unit-test-runner=vitest --bundler=vite
+
 #2. create a component under products lib
 nx g @nx/vue:component product-list --directory=modules/products/src/cart
 ```
