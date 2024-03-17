@@ -1,7 +1,21 @@
 <script setup lang="ts">
-import NxWelcome from './NxWelcome.vue';
+import { RouterLink, RouterView } from 'vue-router';
 </script>
 
 <template>
-  <NxWelcome title="nx-vue-cosmopolis" />
+  <nav>
+    <ul>
+      <li>
+        <RouterLink to="/">Home</RouterLink>
+      </li>
+      <li>
+        <RouterLink to="/products">Products</RouterLink>
+      </li>
+      <li>
+        <RouterLink to="/orders">Orders</RouterLink>
+      </li>
+    </ul>
+  </nav>
+
+  <RouterView />
 </template>

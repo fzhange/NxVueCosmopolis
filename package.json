@@ -2,10 +2,18 @@
   "name": "@nx-vue-cosmopolis/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx run nx-vue-cosmopolis:serve",
+    "build": "nx run-many -t build nx-vue-cosmopolis nx-vue-cosmopolis-e2e shared-ui products orders",
+    "lint": "nx run many -t lint nx-vue-cosmopolis nx-vue-cosmopolis-e2e shared-ui products orders",
+    "test": "nx run many -t test nx-vue-cosmopolis shared-ui products orders",
+    "graph": "nx graph",
+    "reset": "nx reset"
+  },
   "private": true,
   "dependencies": {
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "vue-router": "^4.3.0"
   },
   "devDependencies": {
     "@nx/cypress": "18.1.1",
@@ -39,6 +47,7 @@
     "prettier": "^2.6.2",
     "typescript": "~5.3.2",
     "vite": "~5.0.0",
+    "vite-plugin-dts": "~2.3.0",
     "vitest": "^1.3.1",
     "vue-tsc": "^1.8.8"
   }
